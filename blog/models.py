@@ -10,8 +10,11 @@ class Post(models.Model):
     )
     body = models.TextField()
     slug = models.SlugField(unique=True, max_length=250)
-    created_at=models.DateTimeField(auto_now_add=True)
-    updated_at=models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse("post_detail", kwargs={"pk": self.pk})
