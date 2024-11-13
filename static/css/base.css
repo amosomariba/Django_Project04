@@ -1,0 +1,57 @@
+/* General body styling */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+/* Header styling */
+header {
+    border-bottom: 1px solid #999;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+/* Header title link styling */
+header h1 a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Navigation left alignment */
+.nav-left {
+    margin-right: auto;
+}
+
+/* Navigation right alignment */
+.nav-right {
+    display: flex;
+    padding-top: 2rem;
+}
+
+/* Post entry styling */
+.post-entry {
+    margin-bottom: 2rem;
+}
+
+/* Post entry heading styling */
+.post-entry h2 {
+    margin: 0.5rem 0;
+}
+
+/* Post entry link styling */
+.post-entry h2 a,
+.post-entry h2 a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Post entry link hover effect */
+.post-entry h2 a:hover {
+    color: red;
+}
+
+/* Post entry paragraph styling */
+.post-entry p {
+    margin: 0;
+    font-weight: 400;
+}
